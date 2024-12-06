@@ -1,3 +1,4 @@
+// How far down the body CAN the hair reach
 var hairLength = [
     ' above ear ',
     ' chin ',
@@ -10,6 +11,7 @@ var hairLength = [
     ' floor '
 ]
 
+// Where the hair is 'split' when it comes to bangs
 var hairPart = [
     ' no ',
     ' left ',
@@ -17,6 +19,7 @@ var hairPart = [
     ' right '
 ]
 
+// The intensity of curling to the hair
 var hairTexture = [
     ' straight ',
     ' wavy ',
@@ -24,6 +27,7 @@ var hairTexture = [
     ' kinky '
 ]
 
+// What direction do hair 'chunks' follow
 var hairFlow = [
     ' straight down ',
     ' curving up ',
@@ -32,6 +36,7 @@ var hairFlow = [
     ' curving up'
 ]
 
+// The shape of the end of a hair 'chunk'
 var hairEnds = [
     ' blunt ',
     ' poofy ',
@@ -39,12 +44,14 @@ var hairEnds = [
     ' spikey '
 ]
 
+// Hair that hangs in front of your ears, usually excluded from ponytails. Think Inuyasha
 var hairTendrils = [
     ' none ',
     ' half total hair length ',
     ' same as hair length '
 ]
 
+// Basic hairstyle additions theres definitely a better way to do this but have mercy for now
 var hairPlus = [
     ' high twin ponytails ',
     ' mid twin ponytails ',
@@ -71,24 +78,21 @@ var hairPlus = [
     ' mid right bun ',
     ' low right bun '
 ]
+// reference for my old way of hardcoding randomizing...
+// var randomAnimal5 = Math.floor(Math.random() * (animal.length));
 
-var randomAmountH = Math.floor(Math.random() * (amounthead.length));
-var randomAmount2 = Math.floor(Math.random() * (amount.length));
-var randomAmount3 = Math.floor(Math.random() * (amount.length));
-var randomAmount4 = Math.floor(Math.random() * (amount.length));
-var randomAnimal1 = Math.floor(Math.random() * (animal.length));
-var randomAnimal2 = Math.floor(Math.random() * (animal.length));
-var randomAnimal3 = Math.floor(Math.random() * (animal.length));
-var randomAnimal4 = Math.floor(Math.random() * (animal.length));
-var randomAnimal5 = Math.floor(Math.random() * (animal.length));
-return `This beast has ${amounthead[randomAmountH]} heads, ${amount[randomAmount2]} arms, ${amount[randomAmount3]} legs and ${amount[randomAmount4]} tails. <br><br>
+// the result I meant to spit out
+/* return `This beast has ${amounthead[randomAmountH]} heads, ${amount[randomAmount2]} arms, ${amount[randomAmount3]} legs and ${amount[randomAmount4]} tails. <br><br>
 
 The heads are that of the ${animal[randomAnimal1]}<br>
 The body is that of the ${animal[randomAnimal2]}<br>
 The arms are that of the ${animal[randomAnimal3]}<br>
 The legs are that of the ${animal[randomAnimal4]}<br>
 The tails are that of the ${animal[randomAnimal5]}<br>
-`;
-function newBeast() {
+`; */
+
+// how I would ultimately print the selected rng results
+/* function newBeast() {
     document.getElementById('studyDisplay').innerHTML = beast();
 }
+ */ 
